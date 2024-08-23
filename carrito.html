@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div id="navbar-toggle">☰ Menú</div>
+        
+        <h1>Carrito de compras</h1>
+        
+        <nav id="navbar">
+            
+            <ul>
+                <li><a href="#platillos-section">Menú Principal</a></li>
+                <li><a href="#sushi-section">Sushi</a></li>
+                <li><a href="#tempura-section">Tempura</a></li>
+                <li><a href="#ramen-section">Ramen</a></li>
+                <li><a href="#bebidas-section">Bebidas</a></li>
+                <li><a href="#carrito-section">Ir al Carrito</a> </li>
+            </ul>
+            <button id="close-navbar">✖ </button> <!-- Botón para cerrar el menú -->
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="carrito-container">
+            <!-- Los items del carrito se agregarán aquí -->
+        </section>
+        <p>Total a pagar: $<span id="total-carrito">0.00</span></p>
+        
+        <button id="confirmar-compra">Confirmar Compra</button>
+
+        <button id="regresar-menu">Regresar al Menú</button>
+        
+        <!-- Elemento para el mensaje de confirmación -->
+        <div id="mensaje-confirmacion" class="mensaje-confirmacion" style="display: none;">
+            Pedido en camino
+        </div>
+        
+        
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>
