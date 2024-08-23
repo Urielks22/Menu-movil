@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Digital - Restaurante de Sushi</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div id="navbar-toggle">☰ Menú</div>
+        
+        <h1>Menú Digital</h1>
+        
+        <nav id="navbar">
+            
+            <ul>
+                <li><a href="#platillos-section">Menú Principal</a></li>
+                <li><a href="#sushi-section">Sushi</a></li>
+                <li><a href="#tempura-section">Tempura</a></li>
+                <li><a href="#ramen-section">Ramen</a></li>
+                <li><a href="#bebidas-section">Bebidas</a></li>
+                <li><a href="#carrito-section">Ir al Carrito <img src="img/cart.png"> </a> </li>
+            </ul>
+            <button id="close-navbar">✖ </button> <!-- Botón para cerrar el menú -->
+
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="platillos-section">
+            <h2>Menú de Platillos</h2>
+            <div id="platillos-container"></div>
+        </section>
+
+        <section id="carrito-section">
+            <h2>Carrito de Compras</h2>
+            <p>Productos en el carrito: <span id="cantidad-productos">0</span></p>
+            <p>Total a pagar: $<span id="total-pagar">0.00</span></p>
+            <img src="img/cart.png">
+            <a href="carrito.html" id="ir-al-carrito" class="boton">Ir al carrito</a>
+            
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
